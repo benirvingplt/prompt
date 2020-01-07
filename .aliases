@@ -6,5 +6,11 @@ alias pull='git pull'
 alias fetch='git fetch'
 alias gs='git status'
 alias gc='git commit'
-alias ll='ls -al'
+alias ll='ls -alG'
 alias gb='git branch'
+alias gr='git reset HEAD'
+
+dbash() {
+    docker exec -it "$1" /bin/bash
+    echo "$1"
+}
